@@ -20,7 +20,7 @@ namespace OpenCVForUnityExample
         /// <summary>
         /// The videocapture.
         /// </summary>
-        VideoCapture capture;
+        UnityEngine.XR.WSA.WebCam.VideoCapture capture;
 
         /// <summary>
         /// The rgb mat.
@@ -44,7 +44,7 @@ namespace OpenCVForUnityExample
         // Use this for initialization
         void Start ()
         {
-            capture = new VideoCapture ();
+            capture = new UnityEngine.XR.WSA.WebCam.VideoCapture ();
 
             #if UNITY_WEBGL && !UNITY_EDITOR
             var getFilePath_Coroutine = Utils.getFilePathAsync("768x576_mjpeg.mjpeg", (result) => {

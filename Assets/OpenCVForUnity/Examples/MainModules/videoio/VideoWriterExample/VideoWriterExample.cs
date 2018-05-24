@@ -56,7 +56,7 @@ namespace OpenCVForUnitySample
         /// <summary>
         /// The videocapture.
         /// </summary>
-        VideoCapture capture;
+        UnityEngine.XR.WSA.WebCam.VideoCapture capture;
 
         /// <summary>
         /// The screen capture.
@@ -217,7 +217,7 @@ namespace OpenCVForUnitySample
             if (isPlaying || isRecording)
                 return;
 
-            capture = new VideoCapture ();
+            capture = new UnityEngine.XR.WSA.WebCam.VideoCapture ();
             capture.open (filePath);
 
             if (!capture.isOpened ()) {
